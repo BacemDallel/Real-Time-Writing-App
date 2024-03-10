@@ -13,6 +13,12 @@
             height: 100vh; /* Set the height of the body to fill the viewport */
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Set a nice font */
+        }
+
+        .container {
+            text-align: center; /* Center align the content */
+            margin-bottom: 20px; /* Add some space below the title */
         }
 
         #content {
@@ -21,6 +27,10 @@
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1 style="margin-right: 10px;" >Real-time Writing App</h1>
+        <p>Type your content below:</p>
+    </div>
     <textarea id="content" rows="10" cols="50"></textarea>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
     <script src="{{ url_for('static', filename='app.js') }}"></script>
